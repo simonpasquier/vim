@@ -93,6 +93,3 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
-
-" Pyflakes will not use the quickfix window
-let g:pyflakes_use_quickfix = 0
