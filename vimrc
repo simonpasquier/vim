@@ -7,6 +7,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+colorscheme darkblue
 syntax on
 filetype on
 filetype plugin on
@@ -93,3 +94,5 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
