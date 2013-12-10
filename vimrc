@@ -95,4 +95,11 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 
+" automatically wrap git commit text at 72 chars
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" display colored column at 80 chars
+set colorcolumn=+1
+highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
+set colorcolumn=80
+
